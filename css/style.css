@@ -11,3 +11,77 @@ body {
     font-weight: 100;
     background-color: #FFFFFF
 }
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #FFFFFF;
+    color: aquamarine;
+    padding: 1rem;
+    text-align: left;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    border-bottom: 1px solid mintcream;
+}
+
+.message {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: mintcream;
+    color: white;
+    margin-left: 20%;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: aqua;
+    color: white;
+    margin-right: 20%;
+}
+
+.chat-input-container {
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#userInput {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+}
+
+#sendButton {
+    padding: 0.5rem 1rem;
+    background-color: aquamarine;
+    color: rebeccapurple;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: mintcream;
+}
